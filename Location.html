@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>HOMEPAGE - DARK CROFFLE COFFEE</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+         *{
+             margin:0; 
+             padding:0; 
+             box-sizing:border-box;
+         }
+         body {
+             height: 100%;
+             font-family: "Inconsolata", sans-serif;
+         }
+         .bgimg{
+             background-position: center;
+             background-size: cover;
+             background-image: url(beige-paper-background-simple-diy-craft_53876-132916.avif);
+             min-height: 85%;
+         }
+         .menu
+         {
+             display: none;
+         }
+         .cs-top{
+             position: fixed;
+             width:100%;
+             z-index:1
+         }
+         .cs-top{
+             top: 0px;
+         }
+         .cs-topbar{
+             border-top:6px solid #ccc!important
+         }
+         .cs-row::after,.cs-row:before,.cs-row-padding:after,.cs-row-padding:before,
+         .cs-cell-row:before,.cs-cell-row:after,.cs-clear:after,.cs-clear:before,.cs-bar:before,.cs-bar:after{
+             content:"";
+             display:table;
+             clear:both
+         }
+         .cs-row-padding,.cs-row-padding>.cs-half,.cs-row-padding>.cs-third,.cs-row-padding>.cs-twothird,.cs-row-padding>.cs-threequarter,.cs-row-padding>.cs-quarter,.cs-row-padding>.cs-col{
+             padding:0 8px;
+         }
+         .cs-padding-small{
+             padding:4px 8px!important
+         }
+         .cs-padding{
+             padding:8px 16px!important
+         }
+         .cs-padding-large{
+             padding:12px 24px!important
+         }
+         .cs-padding-16{
+             padding-top:16px!important;padding-bottom:16px!important
+         }
+         .cs-padding-24{
+             padding-top:24px!important;padding-bottom:24px!important
+         }
+         .cs-padding-32{
+             padding-top:32px!important;padding-bottom:32px!important
+         }
+         .cs-padding-48{
+             padding-top:48px!important;padding-bottom:48px!important
+         }
+         .cs-padding-64{
+             padding-top:64px!important;padding-bottom:64px!important
+         }
+         .cs-padding-top-64{
+             padding-top:64px!important
+         }
+         .cs-padding-top-48{
+             padding-top:48px!important
+         }
+         .cs-padding-top-32{
+             padding-top:32px!important
+         }
+         .cs-padding-top-24{
+             padding-top:24px!important
+         }
+         .cs-black,.cs-hover-black:hover{
+             color:#fff!important;
+             background-color:#000!important
+         }
+         .cs-col,.cs-half,.cs-third,.cs-twothird,.cs-threequarter,.cs-quarter{
+             float:left;
+             width:100%
+         }
+         .cs-col.s3
+         {
+             width:24.99999%
+         }
+         .cs-col.s4{
+             width:33.33333%;
+         }
+         .cs-col.s6
+         {
+             width: 49.99999%;
+         }
+         .cs-button{
+             -webkit-touch-callout:none;
+             -webkit-user-select:none;
+             -khtml-user-select:none;
+             -moz-user-select:none;
+             -ms-user-select:none;
+             user-select:none
+         }   
+         .cs-block{
+             display: block;
+             width: 100%;
+         }
+         .cs-display-container{
+             position: relative;
+         }
+         .cs-grayscale-min{
+             filter: grayscale(50%);
+         }
+         .cs-display-bottomleft{
+             position: absolute;
+             left: 0;
+             bottom: 0;
+         }
+         .cs-center{
+             text-align: center!important;
+         }
+         .cs-hide-small{
+             display: none!important;
+         }
+         .cs-tag{
+             background-color: #000;
+             color:#fff;
+             display: inline-block;
+             padding-left: 8px;
+             padding-right: 8px;
+             text-align: center;
+         }
+         .cs-display-middle{
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             -ms-transform: translate(-50%,-50%);
+         }
+         .cs-text-cyan{
+             color:#074dc5!important
+         }
+         .cs-text-black{
+            color:#000
+         }
+         .cs-text-white{
+             color: #fff;
+         }
+         .cs-display-bottomright{
+             position: absolute;
+             right: 0;
+             bottom: 0;
+         }
+         .cs-container:after,.cs-container:before,.cs-panel:after,.cs-panel:before,.cs-row:after,.cs-row:before,.cs-row-padding:after,.cs-row-padding:before,
+         .cs-cell-row:before,.cs-cell-row:after,.cs-clear:after,.cs-clear:before,.cs-bar:before,.cs-bar:after
+         {
+             content:"";
+             display:table;
+             clear:both
+         }
+         .cs-transparent{
+             background-color: transparent;
+         }
+         .cs-button {
+             position: relative;
+             display:inline-block;
+             padding: 1em 1.8em;
+             outline: none;
+             border: 1px solid #303030;
+             background: #212121;
+             color:#fff;
+             white-space: nowrap;
+             text-transform: uppercase;
+             text-decoration: none;
+             letter-spacing: 2px;
+             font-size: 15px;
+             overflow: hidden;
+             transition: 0.2s;
+             border-radius: 20px;
+             cursor: pointer;
+             font-weight: bold;
+             vertical-align: middle;
+         }
+
+         .cs-button:hover {
+             box-shadow: 0 0 10px #01fff4, 0 0 25px #001eff, 0 0 50px #01fff4;
+             transition-delay: 0.6s;
+         }
+
+         .cs-button span {
+             position: absolute;
+         }
+
+         .cs-button span:nth-child(1) {
+             top: 0;
+             left: -100%;
+             width: 100%;
+             height: 2px;
+             background: linear-gradient(90deg, transparent, #01fff4);
+         }
+
+         .cs-button:hover span:nth-child(1) {
+             left: 100%;
+             transition: 0.7s;
+         }
+
+         .cs-button span:nth-child(3) {
+             bottom: 0;
+             right: -100%;
+             width: 100%;
+             height: 2px;
+             background: linear-gradient(90deg, transparent, #001eff);
+             }
+
+             .cs-button:hover span:nth-child(3) {
+             right: 100%;
+             transition: 0.7s;
+             transition-delay: 0.35s;
+             }
+
+             .cs-button span:nth-child(2) {
+             top: -100%;
+             right: 0;
+             width: 2px;
+             height: 100%;
+             background: linear-gradient(180deg, transparent, #01fff4);
+             }
+
+             .cs-button:hover span:nth-child(2) {
+             top: 100%;
+             transition: 0.7s;
+             transition-delay: 0.17s;
+             }
+
+             .cs-button span:nth-child(4) {
+             bottom: -100%;
+             left: 0;
+             width: 2px;
+             height: 100%;
+             background: linear-gradient(360deg, transparent, #001eff);
+             }
+
+             .cs-button:hover span:nth-child(4) {
+             bottom: 100%;
+             transition: 0.7s;
+             transition-delay: 0.52s;
+         }
+
+         .cs-button:active {
+             background: #01fff4;
+             background: linear-gradient(to top right, #ae00af, #001eff);
+             color: #bfbfbf;
+             box-shadow: 0 0 8px #01fff4, 0 0 8px #001eff, 0 0 8px #01fff4;
+             transition: 0.1s;
+         }
+         .cs-button:active span:nth-child(1) 
+             span:nth-child(2) 
+             span:nth-child(2) 
+             span:nth-child(2) {
+             transition: none;
+             transition-delay: none;
+         }
+         .cs-content,.cs-auto
+         {
+             margin-left:auto;
+             margin-right:auto
+         }
+         .cs-content
+         {
+             max-width:980px
+         }
+         .cs-wide
+         {
+             letter-spacing: 4px;
+         }
+         .cs-col.m6, .cs-half
+         {
+             width:49.99999%;
+         }
+         .cs-round
+         {
+             border-radius:4px;
+         }
+         .cs-image
+         {
+             max-width: 100%;
+             height: auto;
+         }
+         .cs-opacity-min
+         {
+             opacity: 0.75;
+         }
+         .cs-large
+         {
+             font-size: 18px!important;
+         }
+         .cs-card
+         {
+             box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px rgba(0,0,0,0.12);
+         }
+         .cs-quarter
+         {
+             float:left;
+             width:100%
+         }
+         .cs-quarter
+         {
+             width: 24.99999%;
+         }
+         .cs-dark-grey,.cs-hover-dark-grey:hover,.cs-dark-gray,.cs-hover-dark-gray:hover
+         {
+             color:#fff!important;
+             background-color:#616161!important
+         }
+         .location-button {
+         -moz-appearance: none;
+         -webkit-appearance: none;
+         appearance: none;
+         border: none;
+         background: none;
+         color: #0f1923;
+         cursor: pointer;
+         position: relative;
+         padding: 8px;
+         margin-bottom: 20px;
+         text-transform: uppercase;
+         font-weight: bold;
+         font-size: 14px;
+         transition: all .15s ease;
+         }
+
+         .location-button::before,.location-button::after {
+         content: '';
+         display: block;
+         position: absolute;
+         right: 0;
+         left: 0;
+         height: calc(50% - 5px);
+         border: 1px solid #7D8082;
+         transition: all .15s ease;
+         }
+
+         .location-button::before {
+         top: 0;
+         border-bottom-width: 0;
+         }
+
+         .location-button::after {
+         bottom: 0;
+         border-top-width: 0;
+         }
+
+         .location-button:active,.location-button:focus {
+         outline: none;
+         }
+
+         .location-button:active::before,.location-button:active::after {
+         right: 3px;
+         left: 3px;
+         }
+
+         .location-button:active::before {
+         top: 3px;
+         }
+
+         .location-button:active::after {
+         bottom: 3px;
+         }
+
+         .location-button_lg {
+         position: relative;
+         display: block;
+         padding: 10px 20px;
+         color: #fff;
+         background-color: #0f1923;
+         overflow: hidden;
+         box-shadow: inset 0px 0px 0px 1px transparent;
+         }
+
+         .location-button_lg::before {
+         content: '';
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 2px;
+         height: 2px;
+         background-color: #0f1923;
+         }
+
+         .location-button_lg::after {
+         content: '';
+         display: block;
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         width: 4px;
+         height: 4px;
+         background-color: #0f1923;
+         transition: all .2s ease;
+         }
+
+         .location-button_sl {
+         display: block;
+         position: absolute;
+         top: 0;
+         bottom: -1px;
+         left: -8px;
+         width: 0;
+         background-color: #074dc5;
+         transform: skew(-15deg);
+         transition: all .2s ease;
+         }
+
+         .location-button_text {
+         position: relative;
+         }
+
+         .location-button:hover {
+         color: #0f1923;
+         }
+
+         .location-button:hover .location-button_sl {
+         width: calc(100% + 15px);
+         }
+
+         .location-button:hover .location-button_lg::after {
+         background-color: #fff;
+         }
+         .cs-input{
+             padding:8px;
+             display:block;
+             border:none;
+             border-bottom:1px solid #ccc;
+             width:100%;
+         }
+         .cs-border{
+             border:1px solid #ccc !important
+         }
+         .cs-justify{
+             text-align:justify!important;
+         }
+         .cs-opacity,.cs-hover-opacity:hover{
+             opacity:0.60
+         }
+         .cs-opacity-off,.cs-hover-opacity-off:hover{
+             opacity: 1;
+         }
+         .c3d-container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+.c3d-carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.c3d-image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+.c3d-span{
+    margin:auto;
+    font-size: 2rem;
+    color:white;
+}
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+.c3d-image:nth-child(1){
+    background-image: url("home barista.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+.c3d-image:nth-child(2){
+    background-image: url("one utama.jpg");
+    transform: rotateY(40deg) translateZ(430px);
+}
+.c3d-image:nth-child(3){
+    background-image: url("pavillion.jpg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+.c3d-image:nth-child(4){
+    background-image: url("Store_KBMall.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+.c3d-image:nth-child(5){
+    background-image: url("nu sentral.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+.c3d-image:nth-child(6){
+    background-image: url("mahkota parade.jpg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+.c3d-image:nth-child(7){
+    background-image: url("midvalley.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+.c3d-image:nth-child(8){
+    background-image: url("plaza shah alam.jpg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+.c3d-image:nth-child(9){
+    background-image: url("sunway pyramid.jpg");
+    transform: rotateY(320deg) translateZ(430px);
+}
+         @font-face {
+             font-family: CafeFrancoise;
+             src: url('CafeFrancoise-EapP9.ttf') format('truetype');
+         }
+     </style>
+   </head>
+   <body>
+    <div class="cs-top">
+        <div class="cs-row cs-padding cs-transparent">
+            <div class="cs-col s3 cs-center">
+                <a class="cs-button cs-padding" href="Home.html">
+                    <span></span>HOME
+                </a>
+            </div>
+            <div class="cs-col s3 cs-center">
+                <a class="cs-button cs-padding" href="index.php">
+                    <span></span>SIGN IN
+                </a>
+            </div>
+            <div class="cs-col s3 cs-center">
+                <a class="cs-button cs-padding" href="Menu.html">
+                    <span></span>MENU
+                </a>
+            </div>
+            <div class="cs-col s3 cs-center">
+                <a class="cs-button cs-padding" href="Location.html">
+                    <span></span>LOCATION
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner_section-3 layout_padding">
+        <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="banner_taital">
+                                    <h1 class="outstanding_text" style="font-family:CafeFrancoise;">Welcome</h1>
+                                    <h1 class="coffee_text cs-text-cyan" style="font-family:CafeFrancoise;">Croffle Dark Cafe</h1>
+                                    <h2 class="there_text cs-text-black">Everyday Great Coffee</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="banner_taital">
+                                    <h1 class="outstanding_text" style="font-family:CafeFrancoise;">SMOOTH LIKE BUTTER </h1>
+                                    <h1 class="coffee_text cs-text-cyan" style="font-family:CafeFrancoise;">Buttercream Latte</h1>
+                                    <h2 class="there_text cs-text-black">Of Course, it's Buttercream Latte </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="banner_taital">
+                                    <h1 class="outstanding_text" style="font-family:CafeFrancoise;">Get a Free Coffee from Us </h1>
+                                    <h1 class="coffee_text cs-text-cyan" style="font-family:CafeFrancoise;">Be a Croffle Dark Cafe Member</h1>
+                                    <div class="learnmore_bt"><a href="index.html">SIGN UP</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cs-content" style="max-width:1100px">
+        <div class="cs-row cs-padding-64" id="about">
+            <div class="c3d-container">
+                <div class="c3d-carousel">
+                    <div class="c3d-image"><span class="c3d-span">Shah Alam</span></div>
+                    <div class="c3d-image"><span class="c3d-span">1 Utama</span></div>
+                    <div class="c3d-image"><span class="c3d-span">Pavilion</span></div>
+                    <div class="c3d-image"><span class="c3d-span">KB Mall</span></div>
+                    <div class="c3d-image"><span class="c3d-span">NU Sentral</span></div>
+                    <div class="c3d-image"><span class="c3d-span">Mahkota Parade</span></div>
+                    <div class="c3d-image"><span class="c3d-span">Midvalley</span></div>
+                    <div class="c3d-image"><span class="c3d-span">Plaza Shah Alam</span></div>
+                    <div class="c3d-image"><span class="c3d-span">Sunway Pyramid</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_section layout_padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-12">
+                 <br><br><br><br><br><br><br><br><br>
+              </div>
+           </div>
+        </div>
+        <div class="container-fluid">
+           <div class="contact_section_2">
+              <div class="row">
+                 <div class="col-md-12">
+                    
+                 </div>
+                 <div class="map_main">
+                    <div class="map-responsive">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8552318605166!2d101.68680309999999!3d3.1329308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4974aa659bc9%3A0xdb5835f3b40105b2!2sGigi%20Coffee%20(Nu%20Sentral)!5e0!3m2!1sen!2smy!4v1686155034130!5m2!1sen!2smy" width="250" height="500" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+    <footer class="cs-padding-64 cs-light-cyan cs-small cs-center">
+      <div class="cs-row-padding">
+          <div class="cs-col s4">
+              <h4>Contact</h4>
+              <p>Question</p>
+              <form action="/action_page.php" target="_blank">
+                  <p><input class="cs-input cs-border" type="text" placeholder="Name" name="Name" required></p>
+                  <p><input class="cs-input cs-border" type="text" placeholder="Email" name="Email" required></p>
+                  <p><input class="cs-input cs-border" type="text" placeholder="Your Question" name="Question" required></p>
+                  <p><input class="cs-input cs-border" type="text" placeholder="Feedback" name="Feedback" required></p>
+                  <br>
+                  <button class="location-button" style="width:150px;">
+                      <span class="location-button_lg">
+                          <span class="location-button_sl"></span>
+                          <span class="location-button_text">Send</span>
+                       </span>
+                  </button>
+              </form>
+          </div>
+
+          <div class="cs-col s4">
+              <h4>Store</h4>
+              <p><i class="fa fa-fw fa-map-marker"></i> CROFFLE DARK CAFE</p>
+              <p><i class="fa fa-fw fa-phone"></i> + (603) 5567 0099</p>
+              <p><i class="fa fa-fw fa-envelope"></i> info@croffledarkcafe.com</p>
+              <h4>Payment</h4>
+              <p><i class="fa fa-fw fa-apple"></i> Apple Pay</p>
+              <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+          </div>
+
+          <div class="cs-col s4 cs-justify">
+              <h4>Find Us</h4>
+              <i onclick="window.location.href='https://www.facebook.com/profile.php?id=100092765292985';" class="fa fa-facebook-official cs-hover-opacity cs-large"></i>
+              <i onclick="window.location.href='https://www.instagram.com/croffledarkcafe/';" class="fa fa-instagram cs-hover-opacity cs-large"></i>
+              <i onclick="window.location.href='https://twitter.com/CafeDark_';" class="fa fa-twitter cs-hover-opacity cs-large"></i>
+          </div>
+      </div>
+  </footer>
+
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>     
+   </body>
+</html>
